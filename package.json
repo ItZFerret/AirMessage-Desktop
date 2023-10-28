@@ -1,0 +1,29 @@
+{
+  "name": "airmessage",
+  "version": "1.0.0",
+  "description": "AirMessage Desktop Client",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Payton",
+  "license": "ISC",
+  "build": {
+    "appId": "org.airmessage.desktop",
+    "productName": "AirMessage",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^27.0.2",
+    "electron-builder": "^24.6.4"
+  }
+}
